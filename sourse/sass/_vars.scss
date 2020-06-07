@@ -8,6 +8,7 @@ $rfs-breakpoint: 1200px !default;
 // Color system
 
 $white: #fff !default;
+$gray-600-alt: #9e9b9b;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -24,9 +25,9 @@ $grays: () !default;
 
 $blue: #007bff !default;
 $indigo: #6610f2 !default;
-$purple: #6f42c1 !default;
+$purple: #d62261 !default;
 $pink: #e83e8c !default;
-$red: #dc3545 !default;
+$red: #F95D51 !default;
 $orange: #fd7e14 !default;
 $yellow: #ffc107 !default;
 $green: #28a745 !default;
@@ -38,12 +39,12 @@ $colors: () !default;
 $colors: map-merge((), $colors);
 
 
-$primary: $blue !default;
+$primary: $purple !default;
 $secondary: $gray-600 !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
-$danger: green !default;
+$danger: $red !default;
 $light: $gray-100 !default;
 $dark: $gray-800 !default;
 
@@ -62,7 +63,7 @@ $theme-colors: map-merge(("primary": $primary,
   $theme-colors);
 
 $body-bg: white !default;
-$body-color: $gray-900 !default;
+$body-color: $black !default;
 
 // Typography
 //
@@ -99,7 +100,7 @@ $grid-breakpoints: (xs: 0,
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  // xxl: 1400px
+  xxl: 1400px
 ) !default;
 
 // Grid containers
@@ -111,7 +112,7 @@ $container-max-widths: (xs: 480px,
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  // xxl: 1340px
+  xxl: 1300px
 ) !default;
 // Grid columns
 //

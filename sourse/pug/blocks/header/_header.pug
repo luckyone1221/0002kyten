@@ -1,9 +1,9 @@
 mixin header()
 	// start header
-	+b.SECTION.header.section#header&attributes(attributes)
+	+b.HEADER.header#header&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 header
-				
-			.row
+			+e.A.logo(href="/")
+				img(src="img/logo.svg" alt="")
+			+e.A.contact-us-btn(href="#") Contact us
+
 	// end header

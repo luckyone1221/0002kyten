@@ -1,10 +1,15 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.headerBlock.section#headerBlock&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-
-			.row
-						
+	+b.SECTION.headerBlock#headerBlock&attributes(attributes)
+		.container.text-center
+			h1.h1 Digital growth tracking and management platform
+			+e.FORM.email-form
+				+e.INPUT.email-inp(type="text" name='email' placeholder='Your e-mail')
+				+e.BUTTON.submit-btn(type='submit') Sign up for updates
+			+e.screen-cont
+				+e.screen-bl
+					img(src='img/@2x/kiten_mob_screen.png' alt='')
+			+e.error-bl
+				+e.cross-btn
+				+e.error-txt Something went wrong... Something went wrong... Something went wrong... Something went wrong... Something went wrong...
 	// end headerBlock

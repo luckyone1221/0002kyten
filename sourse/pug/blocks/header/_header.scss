@@ -1,7 +1,50 @@
+// start .header
+.header {
+	padding: 35px 0;
+	//background-color: pink;
+	.container{
+		display: flex;
+		justify-content: space-between;
+	}
 
-	// start .header
-	.header {
-		 
+	&__logo{
+		width: 90px;
+		@include media-breakpoint-up(xxl){
+			padding-top: 15px;
+		}
+		img{
+			height: auto;
+			width: 90px;
+			max-height: 100%;
+		}
+	}
+
+	&__contact-us-btn{
+		@extend .btn;
+
+		font-family: $secondaty-font;
+		outline: none !important;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		padding: 0 35px;
+
+		border: 1px solid $black;
+		border-radius: 3px;
+
+		font-size: 12px;
+		font-weight: 500;
+
+		&:hover{
+			border-color: $primary;
+		}
+	}
+
+
+	&__{}
+	&__{}
+	&__{}
+	&__{}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

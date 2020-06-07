@@ -3,6 +3,11 @@ html {
 	-webkit-overflow-scrolling: touch;
 }
 
+.d-none{
+	display: none;
+}
+
+
 .pixel-perfect {
 	top: 0;
 	@include a-cent(x);
@@ -37,6 +42,17 @@ html {
 body {
 	min-width: 320px;
 	position: relative;
+
+	/*
+	.main-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		@include media-breakpoint-up(md) {
+			justify-content: flex-start;
+		}
+	}
+	*/
 
 	&::before {
 		content: '';

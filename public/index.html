@@ -6,70 +6,46 @@
 		<meta name="description" content="о чем страница">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, shrink-to-fit=no">
-		<link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png"><meta name="format-detection" content="telephone=no">
-		<link rel="image_src" href="http://genrif.ru/assets/i/soc-logo.png">
-		<meta property="og:type" content="website">
-		<meta property="og:site_name" content="content">
-		<meta property="og:title" content="content">
-		<meta property="og:description" content="content">
-		<meta property="og:url" content="content">
-		<meta property="og:locale" content="ru_RU">
-		<meta property="og:image" content="path/to/image.jpg">
-		<meta property="og:image:width" content="968">
-		<meta property="og:image:height" content="504">
+		<link rel="shortcut icon" type="image/iso" href="img/favicon/favicon.iso">
+		<!---->
 		<!-- Custom Browsers Color-->
 		<meta name="theme-color" content="#3361d8">
-		<link rel="stylesheet" href="libs/swiper/css/swiper.min.css"/>
-		<link rel="stylesheet" href="libs/@fancyapps/fancybox/jquery.fancybox.min.css"/>
+		<!--link(rel="stylesheet", href="libs/swiper/css/swiper.min.css")-->
+		<!--link(rel="stylesheet", href="libs/@fancyapps/fancybox/jquery.fancybox.min.css")-->
 		<link rel="stylesheet" href="css/main.min.css"/>
 	</head>
 	<body><!--[if lt IE 11]><p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
 		<div class="main-wrapper">
 			<!-- start header-->
-			<section class="header section" id="header">
-				<div class="container">
-					<div class="section-title text-center">
-						<h2>header</h2>
-					</div>
-					<div class="row"></div>
+			<header class="header" id="header">
+				<div class="container"><a class="header__logo" href="/"><img src="img/logo.svg" alt=""/></a><a class="header__contact-us-btn" href="#">Contact us</a>
 				</div>
-			</section>
+			</header>
 			<!-- end header-->
 			<!-- start headerBlock-->
-			<div class="headerBlock section" id="headerBlock">
-				<div class="container">
-					<div class="section-title text-center">
-						<h2>headerBlock ds dfsdfdsfsd</h2>
+			<section class="headerBlock" id="headerBlock">
+				<div class="container text-center">
+					<h1 class="h1">Digital growth tracking and management platform</h1>
+					<form class="headerBlock__email-form"><input class="headerBlock__email-inp" type="text" name="email" placeholder="Your e-mail"/>
+						<button class="headerBlock__submit-btn" type="submit">Sign up for updates
+						</button>
+					</form>
+					<div class="headerBlock__screen-cont">
+						<div class="headerBlock__screen-bl"><img src="img/@2x/kiten_mob_screen.png" alt=""/>
+						</div>
 					</div>
-					<div class="row"></div>
+					<div class="headerBlock__error-bl">
+						<div class="headerBlock__cross-btn">
+						</div>
+						<div class="headerBlock__error-txt">Something went wrong... Something went wrong... Something went wrong... Something went wrong... Something went wrong...
+						</div>
+					</div>
 				</div>
-			</div>
+			</section>
 			<!-- end headerBlock-->
-			<!-- start sForm-->
-			<section class="sForm section" id="sForm">
-				<div class="container">
-					<div class="section-title text-center">
-						<h2>sForm</h2>
-					</div>
-					<div class="row"></div>
-				</div>
-			</section>
-			<!-- end sForm-->
-			<!-- start sContact-->
-			<section class="sContact section" id="sContact">
-				<div class="container">
-					<div class="section-title text-center">
-						<h2>sContact</h2>
-					</div>
-					<div class="row"></div>
-				</div>
-			</section>
-			<!-- end sContact-->
-			<footer class="footer block-with-lazy">
-				<div class="container">
-					<h2>footer</h2>
-				</div>
-			</footer>
+			<!--+sForm()-->
+			<!--+sContact()-->
+			<!--+footer()-->
 		</div>
 		<div class="d-none">
 			<div class="form-wrap modal-win modal-form" id="modal-call">
@@ -100,22 +76,22 @@
 			<!-- #modal-call-->
 		</div>
 		<!-- modal-->
-		<script src="js/lazy.js"></script>
+		<!--script(src="js/lazy.js")-->
 		<script src="libs/jquery/jquery.min.js"></script>
 		<!-- полифил для picture-->
-		<script src="libs/picturefill/picturefill.min.js"></script>
+		<!--script(src="libs/picturefill/picturefill.min.js")-->
 		<!-- полифил для object-fit-->
-		<script src="libs/object-fit-images/ofi.min.js"></script>
+		<!--script(src="libs/object-fit-images/ofi.min.js")-->
 		<!-- modal libs-->
-		<script src="libs/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+		<!--script(src="libs/@fancyapps/fancybox/jquery.fancybox.min.js")-->
 		<!-- modal libs-->
 		<!-- slider libs-->
-		<script src="libs/swiper/js/swiper.min.js"></script>
+		<!--script(src="libs/swiper/js/swiper.min.js")-->
 		<!-- /slider libs-->
 		<!-- for svg libs-->
-		<script src="libs/svg4everybody/svg4everybody.min.js"></script>
+		<!--script(src="libs/svg4everybody/svg4everybody.min.js")-->
 		<!-- /for svg libs-->
-		<script src="libs/inputmask/jquery.inputmask.min.js"></script>
+		<!--script(src="libs/inputmask/jquery.inputmask.min.js")-->
 		<script src="js/common.js"></script>
 	</body>
 </html>
