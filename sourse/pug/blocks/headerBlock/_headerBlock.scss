@@ -37,20 +37,20 @@
 		margin-left: auto;
 		margin-right: auto;
 
-		@include media-breakpoint-up(md){
-			display: flex;
-			justify-content: space-between;
-		}
+		display: flex;
+		justify-content: space-between;
 	}
 	&__email-inp{
 		height: 40px;
 		padding: 0 20px;
 
-		width: 100%;
-		margin-bottom: 20px;
+		width: calc(100% - 60px);
+
+		@include media-breakpoint-up(sm){
+			width: 330px;
+		}
 		@include media-breakpoint-up(md){
 			width: 350px;
-			margin-bottom: 0;
 		}
 
 		border: 1px solid $gray-600-alt;
@@ -67,19 +67,31 @@
 		@extend .btn;
 		@include mt();
 
+		span{
+			display: none;
+			@include media-breakpoint-up(sm){
+				display: block;
+			}
+		}
+		i{
+			display: inline;
+			@include media-breakpoint-up(sm){
+				display: none;
+			}
+		}
+
 		text-align: center;
 		border-radius: 2px;
 		font-size: 14px;
 
-		width: 100%;
-		margin-bottom: 20px;
-		@include media-breakpoint-up(md){
+		width: 40px;
+		padding: 0;
+		@include media-breakpoint-up(sm){
 			width: 160px;
-			margin-bottom: 0;
+			padding: 0 15px;
 		}
 
 		height: 40px;
-		padding: 0 15px;
 
 		border: 2px solid $primary;
 		background-color: $white;
@@ -114,7 +126,7 @@
 			height: auto;
 		}
 	}
-	//
+	//error
 	&__error-bl{
 		position: fixed;
 		bottom: 20px;
@@ -133,6 +145,11 @@
 		text-align: left;
 		background: $danger;
 		padding: 10px;
+
+		display: none;
+		&.active{
+			display: block;
+		}
 	}
 	&__cross-btn{
 		position: absolute;
